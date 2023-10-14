@@ -3,24 +3,24 @@
     {
       "bufferView": 2,
       "componentType": 5126,
-      "count": 559,
+      "count": 2479,
       "max": [
-        0.9999997019767761,
-        1.0,
-        0.9999993443489075
+        19.61507797241211,
+        8.966899871826172,
+        44.34479904174805
       ],
       "min": [
-        -0.9999990463256836,
-        -1.0,
-        -1.0
+        -21.22800064086914,
+        -8.93280029296875,
+        0.3449000120162964
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 2,
-      "byteOffset": 6708,
+      "byteOffset": 29748,
       "componentType": 5126,
-      "count": 559,
+      "count": 2479,
       "max": [
         1.0,
         1.0,
@@ -34,104 +34,135 @@
       "type": "VEC3"
     },
     {
-      "bufferView": 1,
+      "bufferView": 3,
       "componentType": 5126,
-      "count": 559,
+      "count": 2479,
       "max": [
+        1.0,
+        1.0,
         1.0,
         1.0
       ],
       "min": [
-        0.0,
-        0.0
+        -1.0,
+        -1.0,
+        -1.0,
+        1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 2479,
+      "max": [
+        0.9903364181518555,
+        0.998046875
+      ],
+      "min": [
+        0.001953125,
+        0.001953125
       ],
       "type": "VEC2"
     },
     {
       "bufferView": 0,
       "componentType": 5125,
-      "count": 2880,
+      "count": 7068,
       "type": "SCALAR"
     }
   ],
   "asset": {
     "extras": {
-      "author": "Aliaksandr.melas (https://sketchfab.com/alexandr.melas)",
+      "author": "Gest.lt (https://sketchfab.com/gestLT)",
       "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
-      "source": "https://sketchfab.com/3d-models/milky-way-skybox-hdri-panorama-b57711d6a450410ca612c4a36f08ce21",
-      "title": "Milky Way Skybox HDRI panorama"
+      "source": "https://sketchfab.com/3d-models/electric-scooter-f3785071e9244d83ba311b7da48a1085",
+      "title": "Electric Scooter"
     },
-    "generator": "Sketchfab-15.33.0",
+    "generator": "Sketchfab-12.66.0",
     "version": "2.0"
   },
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 11520,
+      "byteLength": 28272,
       "name": "floatBufferViews",
       "target": 34963
     },
     {
       "buffer": 0,
-      "byteLength": 4472,
-      "byteOffset": 11520,
+      "byteLength": 19832,
+      "byteOffset": 28272,
       "byteStride": 8,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 13416,
-      "byteOffset": 15992,
+      "byteLength": 59496,
+      "byteOffset": 48104,
       "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 39664,
+      "byteOffset": 107600,
+      "byteStride": 16,
       "name": "floatBufferViews",
       "target": 34962
     }
   ],
   "buffers": [
     {
-      "byteLength": 29408,
+      "byteLength": 147264,
       "uri": "scene.bin"
     }
   ],
   "images": [
     {
-      "uri": "textures/material_emissive.png"
+      "uri": "textures/ElectricScooter_baseColor.png"
+    },
+    {
+      "uri": "textures/ElectricScooter_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/ElectricScooter_normal.png"
     }
   ],
   "materials": [
     {
-      "doubleSided": true,
-      "emissiveFactor": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "emissiveTexture": {
-        "index": 0
+      "name": "ElectricScooter",
+      "normalTexture": {
+        "index": 2
       },
-      "name": "material",
+      "occlusionTexture": {
+        "index": 1
+      },
       "pbrMetallicRoughness": {
-        "baseColorFactor": [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        },
+        "roughnessFactor": 0.8492759146341463
       }
     }
   ],
   "meshes": [
     {
-      "name": "Object_0",
+      "name": "ElectricScooter_ElectricScooter_0",
       "primitives": [
         {
           "attributes": {
             "NORMAL": 1,
             "POSITION": 0,
-            "TEXCOORD_0": 2
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
           },
-          "indices": 3,
+          "indices": 4,
           "material": 0,
           "mode": 4
         }
@@ -144,17 +175,17 @@
         1
       ],
       "matrix": [
-        0.8679567575454712,
-        0.4966397285461426,
-        1.1027617231510302e-16,
+        0.03644139692187309,
         0.0,
         0.0,
-        2.220446049250313e-16,
-        -1.0,
         0.0,
-        -0.4966397285461426,
-        0.8679567575454712,
-        1.9272511532119534e-16,
+        0.0,
+        8.091615582433563e-18,
+        -0.03644139692187309,
+        0.0,
+        0.0,
+        0.03644139692187309,
+        8.091615582433563e-18,
         0.0,
         0.0,
         0.0,
@@ -167,11 +198,35 @@
       "children": [
         2
       ],
-      "name": "root"
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "83fe41c27c1e4942ab6471957fc4f874.fbx"
     },
     {
       "children": [
         3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
       ],
       "matrix": [
         1.0,
@@ -180,28 +235,22 @@
         0.0,
         0.0,
         2.220446049250313e-16,
-        1.0,
-        0.0,
-        0.0,
         -1.0,
+        0.0,
+        0.0,
+        1.0,
         2.220446049250313e-16,
         0.0,
+        -2.0025634765625,
         0.0,
-        0.0,
-        0.0,
+        0.7613296508789063,
         1.0
       ],
-      "name": "GLTF_SceneRootNode"
-    },
-    {
-      "children": [
-        4
-      ],
-      "name": "����������_0"
+      "name": "ElectricScooter"
     },
     {
       "mesh": 0,
-      "name": "Object_4"
+      "name": "ElectricScooter_ElectricScooter_0"
     }
   ],
   "samplers": [
@@ -225,6 +274,14 @@
     {
       "sampler": 0,
       "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
     }
   ]
 }
